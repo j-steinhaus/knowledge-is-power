@@ -9,8 +9,6 @@ const app = express();
 const PORT = process.env.port || 3001;
 
 
-
-
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -29,7 +27,19 @@ if (process.env.NODE_ENV === "production") {
     });
   }
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
+// middleware 
+app.use(
+  session({ secret: "pineapples", resave: true, saveUninitialized: true })
+);
+app.use(passport.initialize());
+app.use(passport.session());
+routes(app);
 
 //   connection 
   app.listen(PORT, () => {
