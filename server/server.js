@@ -9,12 +9,12 @@ const app = express();
 const PORT = process.env.port || 3001;
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-});
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useCreateIndex: true,
+//   useFindAndModify: false,
+// });
 
 // defining api routes and where request head to
 if (process.env.NODE_ENV === "production") {

@@ -1,0 +1,19 @@
+{
+  "name": "knowledge-is-power",
+  "version": "1.0.0",
+  "description": "storing videos of coding for reference and easy access",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-steinhaus/knowledge-is-power/issues"
+  },
+  "homepage": "https://github.com/j-steinhaus/knowledge-is-power#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
