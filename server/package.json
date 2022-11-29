@@ -14,6 +14,8 @@
   },
   "homepage": "https://github.com/j-steinhaus/knowledge-is-power#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.7.3"
   }
 }
