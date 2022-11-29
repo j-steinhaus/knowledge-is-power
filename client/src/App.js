@@ -5,6 +5,7 @@ import Signup from "./sections/Signup";
 import Login from "./sections/Login";
 import Movie from "./sections/Movie";
 import "./App.css";
+import "login.css";
 import API from "./utils/API";
 import UserContext from "./utils/UserContext";
 

@@ -1,22 +1,25 @@
-import React from "react";
-import FormLogin from "../components/FormLogin";
-import qs from 'qs';
-import { useLocation } from "react-router-dom";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Login</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="bg"></div>
 
-function Login() {
-  const location = useLocation();
-  const queryParams = qs.parse(location.search, { ignoreQueryPrefix: true });
-  return (
-    <>
-      <form>
+    <form>
+      <!-- username field  -->
       <div class="form-field" id="form-field-user">
         <input type="text" id="" placeholder="Username" required />
       </div>
 
+      <!-- password field  -->
       <div class="form-field" id="form-field-pwd">
         <input type="password" placeholder="Password" required />
       </div>
 
+      <!-- button field for signup  -->
       <div class="form-field" id="form-field-btn">
         <button
           onclick="location.href='./signup.html'"
@@ -26,14 +29,10 @@ function Login() {
         >
           Signup
         </button>
+        <!-- button for login  -->
         <button class="btn" id="submit" type="submit">Login</button>
       </div>
     </form>
-    </>
-  );
-}
-
-      {/* <FormLogin error={queryParams.error} /> */}
-
-export default Login;
-
+    <script src="./login.js"></script>
+  </body>
+</html>

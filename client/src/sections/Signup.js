@@ -70,15 +70,32 @@ function SignUp() {
   };
   return (
     <>
-      <FormSignup
+      <form>
+      <div class="form-field" id="form-field-name">
+        <input type="text" placeholder="Name" required />
+      </div>
+
+      <div class="form-field" id="form-field-user">
+        <input type="text" id="username" placeholder="Email" required />
+      </div>
+
+      <div class="form-field" id="form-field-pwd">
+        <input type="password" placeholder="Password" required />
+      </div>
+
+      <div class="form-field" id="form-field-btn">
+        <button class="btn2" id="createAccount" type="submit">Signup</button>
+      </div>
+    </form>
+    </>
+  );
+}
+{/* <FormSignup
         handleSubmit={handleSubmit}
         handleInputChange={handleInputChange}
         handleToggle={handleToggle}
         formObject={formObject}
         passwordStrength={passwordStrength}
-      />
-    </>
-  );
-}
-
+      /> */}
+      
 export default SignUp;

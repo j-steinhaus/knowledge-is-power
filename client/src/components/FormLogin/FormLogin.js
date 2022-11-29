@@ -8,7 +8,6 @@ const FormLogin = (props) => (
       <Form size="large" action="/api/login" method="post">
         <Segment stacked>
           <Image
-            // src={FYB_finals5}
             className="fyblue"
             alt="logo"
             style={{
