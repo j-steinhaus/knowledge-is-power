@@ -1,10 +1,9 @@
 import React, { useEffect, useContext, useState, useRef, useMemo } from "react";
 import { Container } from "semantic-ui-react";
-import Nav from "../components/Nav";
-import ButtonVideo from "../components/ButtonVideo";
-import FormVideo from "../components/FormVideo";
+import Nav from "../sections/Nav";
+import ButtonVideo from "../sections/ButtonVideo";
+import FormVideo from "../sections/FormVideo";
 import Movies from "../utils/Movies";
-import { useHistory } from "react-router-dom";
 
 // page after login 
 function Main() {
