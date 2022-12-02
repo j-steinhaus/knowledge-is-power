@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Button, Form, Grid, Segment, Image } from "semantic-ui-react";
 
 // logging in 
