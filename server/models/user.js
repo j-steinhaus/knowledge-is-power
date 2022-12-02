@@ -1,5 +1,5 @@
-// info needing to save 
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose')
+const { Schema } = mongoose;
 
 const userSchema = new Schema ({
     name: {
@@ -17,6 +17,8 @@ const userSchema = new Schema ({
     password: {
     type: String,
     required: true,
-
     },
-})
+});
+
+const User = mongoose.model('User', userSchema);
+module.exports = User;

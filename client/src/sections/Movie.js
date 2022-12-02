@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import PlayVideo from "../components/PlayVideo";
 import FormVideo from "../components/FormVideo";
 
-function PlayVideo() {
+function Play() {
   return (
     <>
       <Nav />
@@ -13,4 +13,4 @@ function PlayVideo() {
   );
 }
 
-export default PlayVideo;
+export default Play;
