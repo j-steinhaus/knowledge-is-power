@@ -13,6 +13,10 @@ type Auth {
     token: String
     user: User
 }
-`
+
+type Query {
+    me: User
+}
+`;
 
 module.exports = typeDefs;
