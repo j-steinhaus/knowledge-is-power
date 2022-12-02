@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-import FormSignup from "../components/FormSignup";
+// import { useHistory } from "react-router-dom";
+// import FormSignup from "../components/FormSignup";
+import './login.css';
 
 
 function SignUp() {
-  const past = useHistory();
+  // const past = useHistory();
 
   const [formObject, setFormObject] = useState({
     firstName: "",
@@ -21,70 +22,70 @@ function SignUp() {
 //   strength of password to make it good 
   const [passwordStrength, setPasswordStrength] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    if (formObject.JS) {
-      formObject.movies = formObject.movies.concat(Movies.JsVideoArray);
-    }
-    if (formObject.React) {
-      formObject.movies = formObject.movies.concat(Movies.ReactVideoArray);
-    }
-    if (formObject.HTML) {
-      formObject.movies = formObject.movies.concat(Movies.htmlVideoArray);
-    }
-    if (formObject.CSS) {
-      formObject.movies = formObject.movies.concat(Movies.cssVideoArray);
-    }
-    API.createUser(formObject)
-      .then((res) => {
-        if (res.statusText === "OK") {
-          past.push("/login");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  //   if (formObject.JS) {
+  //     formObject.movies = formObject.movies.concat(Movies.JsVideoArray);
+  //   }
+  //   if (formObject.React) {
+  //     formObject.movies = formObject.movies.concat(Movies.ReactVideoArray);
+  //   }
+  //   if (formObject.HTML) {
+  //     formObject.movies = formObject.movies.concat(Movies.htmlVideoArray);
+  //   }
+  //   if (formObject.CSS) {
+  //     formObject.movies = formObject.movies.concat(Movies.cssVideoArray);
+  //   }
+  //   API.createUser(formObject)
+  //     .then((res) => {
+  //       if (res.statusText === "OK") {
+  //         past.push("/login");
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
 
-  const handleToggle = (name, value) => {
-    setFormObject({
-      ...formObject,
-      [name]: value,
-    });
-  };
+  // const handleToggle = (name, value) => {
+  //   setFormObject({
+  //     ...formObject,
+  //     [name]: value,
+  //   });
+  // };
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
+  // const handleInputChange = (event) => {
+  //   const { name, value } = event.target;
 
-    setFormObject({
-      ...formObject,
-      [name]: value,
-    });
+  //   setFormObject({
+  //     ...formObject,
+  //     [name]: value,
+  //   });
 
-    if (name === "password") {
-      API.getPasswordStrength(value).then((res) => {
-        setPasswordStrength(res.data.strength);
-      });
-    }
-  };
+  //   if (name === "password") {
+  //     API.getPasswordStrength(value).then((res) => {
+  //       setPasswordStrength(res.data.strength);
+  //     });
+  //   }
+  // };
   return (
     <>
       <form>
-      <div class="form-field" id="form-field-name">
+      <div className="form-field" id="form-field-name">
         <input type="text" placeholder="Name" required />
       </div>
 
-      <div class="form-field" id="form-field-user">
+      <div className="form-field" id="form-field-user">
         <input type="text" id="username" placeholder="Email" required />
       </div>
 
-      <div class="form-field" id="form-field-pwd">
+      <div className="form-field" id="form-field-pwd">
         <input type="password" placeholder="Password" required />
       </div>
 
-      <div class="form-field" id="form-field-btn">
-        <button class="btn2" id="createAccount" type="submit">Signup</button>
+      <div className="form-field" id="form-field-btn">
+        <button className="btn2" id="createAccount" type="submit">Signup</button>
       </div>
     </form>
     </>
