@@ -4,12 +4,14 @@ import qs from 'qs';
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 // import SignUp from "./Signup";
+import '../assets/login.css';
+import Nav from "./Nav";
 
 function Login() {
   const location = useLocation();
   const queryParams = qs.parse(location.search, { ignoreQueryPrefix: true });
   return (
-    <>
+    <div id='bg'>
       <form>
       <div className="form-field" id="form-field-user">
         <input type="text" id="" placeholder="Username" required />
@@ -33,7 +35,8 @@ function Login() {
         <button className="btn" id="submit" type="submit">Login</button>
       </div>
     </form>
-    </>
+    </div>
+
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { useHistory } from "react-router-dom";
 // import FormSignup from "../components/FormSignup";
-import './login.css';
+import '../assets/login.css';
 
 
 function SignUp() {
