@@ -3,7 +3,7 @@ import React from "react";
 import qs from 'qs';
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import SignUp from "./Signup";
+import SignUp from "./Signup";
 import '../assets/login.css';
 import Nav from "./Nav";
 
