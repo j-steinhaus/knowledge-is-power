@@ -1,14 +1,14 @@
 import React from "react";
-import Nav from "../components/Nav";
-import PlayVideo from "../components/PlayVideo";
-import FormVideo from "../components/FormVideo";
+// import MovieNav from "../components/MovieNav";
+// import PlayVideo from "../PlayVideo";
+// import FormVideo from "../FormVideo";
 
 function Play() {
   return (
     <>
-      <Nav />
-      <PlayVideo />
-      <FormVideo />
+      {/* <NavBar /> */}
+      {/* <PlayVideo /> */}
+      {/* <FormVideo /> */}
     </>
   );
 }

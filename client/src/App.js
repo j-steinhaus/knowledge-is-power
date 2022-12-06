@@ -13,6 +13,7 @@ import Login from './sections/Login';
 import Home from './sections/Home';
 // import 'login.css';
 import Signup from './sections/Signup';
+import Primary from './sections/Primary';
 
 
 
@@ -41,10 +42,10 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route
+            {/* <Route
               path="/"
               element={<Primary />}
-            />
+            /> */}
             <Route
               path="/Login"
               element={<Login />}

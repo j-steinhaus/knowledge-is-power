@@ -4,7 +4,7 @@ import { Container, Menu, Header, Image } from "semantic-ui-react";
 import mainLogo from "./assets/mainLogo.png";
 
 // navigation display 
-function NavBar() {
+const MovieNav = () => {
   const location = useLocation();
   return (
     <>
@@ -60,4 +60,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default MovieNav;
